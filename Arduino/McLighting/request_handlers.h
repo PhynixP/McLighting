@@ -41,7 +41,8 @@ void getArgs() {
 
 
 long convertSpeed(int mcl_speed) {
-  long ws2812_speed = mcl_speed * 256;
+  //long ws2812_speed = mcl_speed * 256;
+  long ws2812_speed = mcl_speed;
   ws2812_speed = SPEED_MAX - ws2812_speed;
   if (ws2812_speed < SPEED_MIN) {
     ws2812_speed = SPEED_MIN;
